@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>ebookkeeper - E-Könyvelő Cég</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: #F7F7F7;
@@ -18,7 +19,7 @@
         }
 
         #content {
-            max-width: 800px;
+            max-width: 90%;
             margin: 40px auto;
             padding: 20px;
             background-color: #FFF;
@@ -28,12 +29,12 @@
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 10px;
         }
 
@@ -56,7 +57,20 @@
             color: #FFF;
             padding: 20px;
             text-align: center;
-            font-size: 14px;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        
+        @media screen and (min-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -68,7 +82,7 @@
     <div id="content">
         <h1>Kezelje pénzügyeit hatékonyan az ebookkeeper segítségével!</h1>
         <p>Mi az ebookkeepernél kínáljuk a legjobb elektronikus könyvelési szolgáltatást a vállalkozások számára. Tegye könnyebbé a pénzügyi folyamatokat és fókuszáljon az üzleti növekedésre!</p>
-        <a href="#" class="button">Regisztráljon most!</a>
+        <a href="register.html" class="button">Regisztráljon most!</a>
     </div>
 
     <div id="footer">
