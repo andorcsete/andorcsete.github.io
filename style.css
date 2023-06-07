@@ -59,6 +59,9 @@
         gap: 10px;
         line-break: anywhere;
     }
+    .services a{
+      text-decoration: none;
+    }
     .service{
         background-color: #222222;
         width: 8em;
@@ -201,6 +204,9 @@
         gap: 10px;
         line-break: anywhere;
         overflow-x: scroll;
+    }
+    .services a{
+      text-decoration: none;
     }
     .service{
         background-color: #222222;
