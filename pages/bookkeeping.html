@@ -1,1 +1,58 @@
-<h1 style="text-align: center; margin: 10em;">We do bookkeeping!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebookkeeper.hu – Könyvelés új dimenzióban. Tapasztalja meg a hatékony és megbízható könyvelési megoldásokat vállalkozásának. Hozza ki a legtöbbet pénzügyeiből az eBookkeeper segítségével. Gyors, egyszerű, elektronikus könyvelés.">
+    <meta name="keywords" content="könyvelés, pénzügyek, ebookkeeper, könyvelő, vállalkozás, digitaliskönyvelés, üzletinövekedés pénzügyiadminisztráció, számvitel, adóbevallás, magyar, könyvelő kisvállalkozás, könyvelés a közelben, ebookkeeper.hu">
+    <meta name="author" content="Szelei Katalin, Csete Andor">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>könyvelés - eBookkeeper</title>
+    <style>
+        body{
+            margin: 0px;
+            overflow-x: none;
+            background-color: #00BFB3;
+            font-family: Arial;
+            height: 5000px;
+        }
+        .big{
+            text-align: center;
+            letter-spacing: normal;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            transition: 20ms;
+        }
+        #title1{
+            top: 10em;
+        }
+        #title2{
+            top: 40em;
+            letter-spacing: 130px;
+        }
+        #title3{
+            top: 60em;
+        }
+    </style>
+</head>
+<body id="body">
+    <main id="main">
+        <h1 id="title1" class="big">Könyvelünk!</h1>
+        <h1 id="title2" class="big">Csak Neked!</h1>
+    </main>
+    <script>
+        window.onscroll = function() {
+            var scrollEffect1 = document.getElementById("title1");
+            var scrollEffect2 = document.getElementById("title2");
+
+            var distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            scrollEffect1.style.letterSpacing = distanceFromTop/10 + "px";
+            scrollEffect2.style.letterSpacing = 130-distanceFromTop/10 + "px";
+            };
+    </script>
+</body>
+</html>
