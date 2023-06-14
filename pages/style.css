@@ -62,7 +62,7 @@ hr {
 .about {
   width: 70%;
   margin: 3em auto 5em auto;
-  border: solid 15px #01022e;
+  border: none;
   height: 70vh;
   border-radius: 5px;
   box-shadow: 3px 3px 10px black;
