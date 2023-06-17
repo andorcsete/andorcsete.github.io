@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-          content="Ebookkeeper.hu - Könyvelés új dimenzióban. Tapasztalja meg a hatékony és megbízható könyvelési megoldásokat vállalkozásának. Hozza ki a legtöbbet pénzügyeiből az eBookkeeper segítségével. Gyors, egyszerű, elektronikus könyvelés.">
-        <meta name="keywords"
-          content="könyvelés, pénzügyek, ebookkeeper, könyvelő, vállalkozás, digitaliskönyvelés, üzletinövekedés pénzügyiadminisztráció, számvitel, adóbevallás, magyar, könyvelő kisvállalkozás, könyvelés a közelben, ebookkeeper.hu">
-        <meta name="author" content="Szelei Katalin, Csete Andor">
-        <title>eBookkeeper</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ebookkeeper.hu - Könyvelés új dimenzióban. Tapasztalja meg a hatékony és megbízható könyvelési megoldásokat vállalkozásának. Hozza ki a legtöbbet pénzügyeiből az eBookkeeper segítségével. Gyors, egyszerű, elektronikus könyvelés."
+    />
+    <meta
+      name="keywords"
+      content="könyvelés, pénzügyek, ebookkeeper, könyvelő, vállalkozás, digitaliskönyvelés, üzletinövekedés pénzügyiadminisztráció, számvitel, adóbevallás, magyar, könyvelő kisvállalkozás, könyvelés a közelben, ebookkeeper.hu"
+    />
+    <meta name="author" content="Szelei Katalin, Csete Andor" />
+    <title>eBookkeeper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <main>
-        <section class="section" id="sect1">
-            <div id="titlediv">
-                <h1>eBookkeeper</h1>
-            <p>
-                Hagyja, hogy mi intézzük a könyvelést, Ön pedig fókuszáljon az üzleti növekedésre.
-                Fedezze fel az eBookkeeper előnyeit ma!
-            </p>
-            <img src="../images/IMG_6676.jpeg" alt="ebookkeeper" id="titleimg">
-            </div>
-        </section>
-        <section class="section" id="sect2">
-
-        </section>
-        <section class="section" id="sect3">
-
-        </section>
-        <section class="section" id="sect4">
-
-        </section>
+      <div id="navlinks">
+        <svg
+          id="menuitems"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="top"
+            d="M4 18H10"
+            stroke="#000000"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+          <path
+            id="mid"
+            d="M4 12L16 12"
+            stroke="#000000"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+          <path
+            id="bot"
+            d="M4 6L20 6"
+            stroke="#000000"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <section class="section" id="sect1">
+        <div id="titlediv">
+          <h1>eBookkeeper</h1>
+          <p>
+            Hagyja, hogy mi intézzük a könyvelést, Ön pedig fókuszáljon az
+            üzleti növekedésre. Fedezze fel az eBookkeeper előnyeit ma!
+          </p>
+          <img src="../images/IMG_6676.jpeg" alt="ebookkeeper" id="titleimg" />
+        </div>
+      </section>
+      <section class="section" id="sect2"></section>
+      <section class="section" id="sect3"></section>
+      <section class="section" id="sect4"></section>
     </main>
-</body>
+    <script>
+        const svg = document.getElementById("menuitems");
+        svg.addEventListener("click", function(e){
+            document.getElementById("bot").style.transform=" rotate(-45deg) translateY(15px) translateX(-15px)"
+            document.getElementById("mid").style.transform=" rotate(45deg) translateY(-10px) translateX(10px)"
+            document.getElementById("mid").style.width=" 50px"
+            document.getElementById("top").style.opacity= "0"
+        })
+    </script>
+  </body>
 </html>

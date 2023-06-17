@@ -1,27 +1,47 @@
-body{
-    margin: 0;
-    background-color: #ffefbc;
-    font-family: Arial;
+body {
+  margin: 0;
+  background-color: #ffefbc;
+  font-family: Arial;
 }
-section{
-    width: 75%;
-    margin: auto;
+section {
+  width: 75%;
+  margin: auto;
 }
-#titlediv h1{
-    color: black;
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 5em auto 1em auto;
+#titlediv h1 {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 5em auto 1em auto;
 }
-#titlediv p{
-    font-size: 21px;
+#titlediv p {
+  font-size: 21px;
 }
-#titlediv{
-    width: 40%;
+#titlediv {
+  width: 40%;
 }
-#titleimg{
-    width: 400px;
-    border-radius: 20px;
-    margin-left: 100%;
+#titleimg {
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 100%;
+}
+#navlinks {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menuitems {
+  width: 50px;
+  transition: 200ms;
+  z-index: 99;
+}
+/* #navlinks svg:hover{
+    padding-right: 10px;    
+} */
+
+#top,
+#mid,
+#top {
+  transition: 100ms;
 }
