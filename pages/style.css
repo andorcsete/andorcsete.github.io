@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Baristo';
+  src: url('../fonts/Baristo.woff') format('woff'), 
+       url('../fonts/Baristo.ttf') format('truetype'),
+       url('../fonts/Baristo.otf') format('opentype');
+}
 body {
   margin: 0;
   font-family: Arial;
