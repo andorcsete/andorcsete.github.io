@@ -1,47 +1,195 @@
+@font-face {
+  font-family: "BalooTammudu";
+  src: url("fonts/Baloo-Tammudu/balootammudu/BalooTammudu-Regular.ttf");
+}
+@font-face {
+  font-family: "Bilbo";
+  src: url("fonts/Bilbo/Bilbo-Regular.ttf");
+}
+::-webkit-scrollbar {
+  width: 0.4rem; /* Adjust the width to your preference */
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the thumb transparent */
+  scrollbar-width: none;
+}
+
 body {
-  margin: 0;
-  background-color: #ffefbc;
-  font-family: Arial;
+  margin: 0px;
+  background-color: black;
+  color: white;
+  font-family: "BalooTammudu";
 }
-section {
-  width: 75%;
-  margin: auto;
-}
-#titlediv h1 {
-  color: black;
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: -1px;
-  margin: 5em auto 1em auto;
-}
-#titlediv p {
-  font-size: 21px;
-}
-#titlediv {
-  width: 40%;
-}
-#titleimg {
-  width: 400px;
-  border-radius: 20px;
-  margin-left: 100%;
-}
-#navlinks {
+header {
+  width: 100%;
+  border-bottom: #cacaca 1px solid;
+  height: 11.5vh;
   position: fixed;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#menuitems {
-  width: 50px;
-  transition: 200ms;
+  top: 0px;
+  background-color: rgba(0, 0, 0);
   z-index: 99;
 }
-/* #navlinks svg:hover{
-    padding-right: 10px;    
-} */
-
-#top,
-#mid,
-#top {
-  transition: 100ms;
+#title {
+  width: 30em;
+  height: 100%;
+  border-right: solid #cacaca 1px;
+  position: relative;
+  cursor: pointer;
+}
+#title a {
+  letter-spacing: 3px;
+  font-size: 50px;
+  position: absolute;
+  font-family: "BalooTammudu";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: white;
+}
+#en-hu {
+  position: absolute;
+  right: 5em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+#menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3em;
+  cursor: pointer;
+  transition: 300ms;
+}
+.open #line1 {
+  transform: rotate(45deg) translateX(5px) translateY(-7px);
+}
+.open #line2 {
+  opacity: 0;
+}
+.open #line3 {
+  transform: rotate(-45deg) translateX(-15px) translateY(-1px);
+}
+.lines {
+  transition: 180ms;
+}
+#social_media {
+  position: fixed;
+  left: 30px;
+  bottom: 1em;
+}
+#scroll_indicator {
+  height: 43vh;
+  width: 20px;
+  position: fixed;
+  left: 54px;
+  top: 13em;
+}
+#scroll_indicator .line {
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}
+#indicatorBall {
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(-5px);
+  top: 0%;
+  position: absolute;
+}
+#section1 {
+  font-size: 100px;
+  color: white;
+  width: 40%;
+  margin: auto;
+  letter-spacing: 10px;
+  position: relative;
+}
+#section1 .a {
+  position: relative;
+  left: -1.6em;
+}
+#section1 .b {
+  position: relative;
+}
+#section1 .c {
+  font-family: "Bilbo";
+  position: relative;
+  left: 1.4em;
+}
+#section1 .d {
+  position: relative;
+  left: 1.4em;
+}
+.content {
+  margin-top: 19em;
+}
+#section2 {
+  width: 45%;
+  margin: auto;
+  letter-spacing: 2px;
+  position: relative;
+  margin-top: 50em;
+}
+#section2 .a {
+  font-size: 100px;
+  background: linear-gradient(90deg, #522ee1 0.14%, #ce405a 105.27%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section2 .b {
+  font-size: 55px;
+  color: #c2c2c2;
+}
+#section2 .c {
+  font-size: 45px;
+}
+#down_arrow{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2em;
+    cursor: pointer;
+    z-index: 99;
+}
+#down_arrowSVG .y{
+    transition: 200ms all;
+    animation: downArrow 1.5s infinite;
+}
+@keyframes downArrow{
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    75%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+#footerBanner{
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  height: 75px;
+  background-color: #FFBE5C;
+  margin-top: 20em;
+  z-index: -99;
+}
+#blob{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -99;
+  filter: blur(250px);
 }
